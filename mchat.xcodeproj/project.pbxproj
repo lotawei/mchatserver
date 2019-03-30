@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED451DFC224F48F7001F9F7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451DFB224F48F7001F9F7F /* AppDelegate.swift */; };
+		ED451DFE224F48F7001F9F7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451DFD224F48F7001F9F7F /* ViewController.swift */; };
+		ED451E01224F48F7001F9F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED451DFF224F48F7001F9F7F /* Main.storyboard */; };
+		ED451E03224F48F8001F9F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED451E02224F48F8001F9F7F /* Assets.xcassets */; };
+		ED451E06224F48F8001F9F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED451E04224F48F8001F9F7F /* LaunchScreen.storyboard */; };
+		ED451E11224F48F9001F9F7F /* mchatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E10224F48F9001F9F7F /* mchatTests.swift */; };
+		ED451E1C224F48F9001F9F7F /* mchatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E1B224F48F9001F9F7F /* mchatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED451E0D224F48F9001F9F7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED451DF0224F48F7001F9F7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED451DF7224F48F7001F9F7F;
+			remoteInfo = mchat;
+		};
+		ED451E18224F48F9001F9F7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED451DF0224F48F7001F9F7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED451DF7224F48F7001F9F7F;
+			remoteInfo = mchat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED451DF8224F48F7001F9F7F /* mchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED451DFB224F48F7001F9F7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED451DFD224F48F7001F9F7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED451E00224F48F7001F9F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED451E02224F48F8001F9F7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED451E05224F48F8001F9F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED451E07224F48F8001F9F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED451E0C224F48F9001F9F7F /* mchatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mchatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED451E10224F48F9001F9F7F /* mchatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mchatTests.swift; sourceTree = "<group>"; };
+		ED451E12224F48F9001F9F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED451E17224F48F9001F9F7F /* mchatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mchatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED451E1B224F48F9001F9F7F /* mchatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mchatUITests.swift; sourceTree = "<group>"; };
+		ED451E1D224F48F9001F9F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED451DF5224F48F7001F9F7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED451E09224F48F9001F9F7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED451E14224F48F9001F9F7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED451DEF224F48F7001F9F7F = {
+			isa = PBXGroup;
+			children = (
+				ED451DFA224F48F7001F9F7F /* mchat */,
+				ED451E0F224F48F9001F9F7F /* mchatTests */,
+				ED451E1A224F48F9001F9F7F /* mchatUITests */,
+				ED451DF9224F48F7001F9F7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED451DF9224F48F7001F9F7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED451DF8224F48F7001F9F7F /* mchat.app */,
+				ED451E0C224F48F9001F9F7F /* mchatTests.xctest */,
+				ED451E17224F48F9001F9F7F /* mchatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED451DFA224F48F7001F9F7F /* mchat */ = {
+			isa = PBXGroup;
+			children = (
+				ED451DFB224F48F7001F9F7F /* AppDelegate.swift */,
+				ED451DFD224F48F7001F9F7F /* ViewController.swift */,
+				ED451DFF224F48F7001F9F7F /* Main.storyboard */,
+				ED451E02224F48F8001F9F7F /* Assets.xcassets */,
+				ED451E04224F48F8001F9F7F /* LaunchScreen.storyboard */,
+				ED451E07224F48F8001F9F7F /* Info.plist */,
+			);
+			path = mchat;
+			sourceTree = "<group>";
+		};
+		ED451E0F224F48F9001F9F7F /* mchatTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED451E10224F48F9001F9F7F /* mchatTests.swift */,
+				ED451E12224F48F9001F9F7F /* Info.plist */,
+			);
+			path = mchatTests;
+			sourceTree = "<group>";
+		};
+		ED451E1A224F48F9001F9F7F /* mchatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED451E1B224F48F9001F9F7F /* mchatUITests.swift */,
+				ED451E1D224F48F9001F9F7F /* Info.plist */,
+			);
+			path = mchatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED451DF7224F48F7001F9F7F /* mchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED451E20224F48F9001F9F7F /* Build configuration list for PBXNativeTarget "mchat" */;
+			buildPhases = (
+				ED451DF4224F48F7001F9F7F /* Sources */,
+				ED451DF5224F48F7001F9F7F /* Frameworks */,
+				ED451DF6224F48F7001F9F7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mchat;
+			productName = mchat;
+			productReference = ED451DF8224F48F7001F9F7F /* mchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED451E0B224F48F9001F9F7F /* mchatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED451E23224F48F9001F9F7F /* Build configuration list for PBXNativeTarget "mchatTests" */;
+			buildPhases = (
+				ED451E08224F48F9001F9F7F /* Sources */,
+				ED451E09224F48F9001F9F7F /* Frameworks */,
+				ED451E0A224F48F9001F9F7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED451E0E224F48F9001F9F7F /* PBXTargetDependency */,
+			);
+			name = mchatTests;
+			productName = mchatTests;
+			productReference = ED451E0C224F48F9001F9F7F /* mchatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED451E16224F48F9001F9F7F /* mchatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED451E26224F48F9001F9F7F /* Build configuration list for PBXNativeTarget "mchatUITests" */;
+			buildPhases = (
+				ED451E13224F48F9001F9F7F /* Sources */,
+				ED451E14224F48F9001F9F7F /* Frameworks */,
+				ED451E15224F48F9001F9F7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED451E19224F48F9001F9F7F /* PBXTargetDependency */,
+			);
+			name = mchatUITests;
+			productName = mchatUITests;
+			productReference = ED451E17224F48F9001F9F7F /* mchatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED451DF0224F48F7001F9F7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = lotawei;
+				TargetAttributes = {
+					ED451DF7224F48F7001F9F7F = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					ED451E0B224F48F9001F9F7F = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = ED451DF7224F48F7001F9F7F;
+					};
+					ED451E16224F48F9001F9F7F = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = ED451DF7224F48F7001F9F7F;
+					};
+				};
+			};
+			buildConfigurationList = ED451DF3224F48F7001F9F7F /* Build configuration list for PBXProject "mchat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED451DEF224F48F7001F9F7F;
+			productRefGroup = ED451DF9224F48F7001F9F7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED451DF7224F48F7001F9F7F /* mchat */,
+				ED451E0B224F48F9001F9F7F /* mchatTests */,
+				ED451E16224F48F9001F9F7F /* mchatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED451DF6224F48F7001F9F7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED451E06224F48F8001F9F7F /* LaunchScreen.storyboard in Resources */,
+				ED451E03224F48F8001F9F7F /* Assets.xcassets in Resources */,
+				ED451E01224F48F7001F9F7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED451E0A224F48F9001F9F7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED451E15224F48F9001F9F7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED451DF4224F48F7001F9F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED451DFE224F48F7001F9F7F /* ViewController.swift in Sources */,
+				ED451DFC224F48F7001F9F7F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED451E08224F48F9001F9F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED451E11224F48F9001F9F7F /* mchatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED451E13224F48F9001F9F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED451E1C224F48F9001F9F7F /* mchatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED451E0E224F48F9001F9F7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED451DF7224F48F7001F9F7F /* mchat */;
+			targetProxy = ED451E0D224F48F9001F9F7F /* PBXContainerItemProxy */;
+		};
+		ED451E19224F48F9001F9F7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED451DF7224F48F7001F9F7F /* mchat */;
+			targetProxy = ED451E18224F48F9001F9F7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED451DFF224F48F7001F9F7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED451E00224F48F7001F9F7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED451E04224F48F8001F9F7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED451E05224F48F8001F9F7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED451E1E224F48F9001F9F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED451E1F224F48F9001F9F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED451E21224F48F9001F9F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lotawei.nought.asyncboy.com.mchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED451E22224F48F9001F9F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lotawei.nought.asyncboy.com.mchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED451E24224F48F9001F9F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mchatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lotawei.nought.asyncboy.com.mchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mchat.app/mchat";
+			};
+			name = Debug;
+		};
+		ED451E25224F48F9001F9F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mchatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lotawei.nought.asyncboy.com.mchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mchat.app/mchat";
+			};
+			name = Release;
+		};
+		ED451E27224F48F9001F9F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mchatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lotawei.nought.asyncboy.com.mchatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mchat;
+			};
+			name = Debug;
+		};
+		ED451E28224F48F9001F9F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = mchatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lotawei.nought.asyncboy.com.mchatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mchat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED451DF3224F48F7001F9F7F /* Build configuration list for PBXProject "mchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED451E1E224F48F9001F9F7F /* Debug */,
+				ED451E1F224F48F9001F9F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED451E20224F48F9001F9F7F /* Build configuration list for PBXNativeTarget "mchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED451E21224F48F9001F9F7F /* Debug */,
+				ED451E22224F48F9001F9F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED451E23224F48F9001F9F7F /* Build configuration list for PBXNativeTarget "mchatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED451E24224F48F9001F9F7F /* Debug */,
+				ED451E25224F48F9001F9F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED451E26224F48F9001F9F7F /* Build configuration list for PBXNativeTarget "mchatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED451E27224F48F9001F9F7F /* Debug */,
+				ED451E28224F48F9001F9F7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED451DF0224F48F7001F9F7F /* Project object */;
+}
