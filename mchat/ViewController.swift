@@ -105,7 +105,7 @@ class ViewController: UIViewController ,GCDAsyncSocketDelegate{
         
         
             newSocket.readData(withTimeout: -1, tag: 1)
-        
+            
         
         
     }
