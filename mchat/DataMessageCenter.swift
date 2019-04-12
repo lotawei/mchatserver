@@ -118,6 +118,9 @@ class  DataMessageCenter {
             
             let  messagename =  jsonres["messagename"].string
             
+            
+            
+            
             if  messagename != nil && messagename! == "userlogin" {
               
                 guard let  userid = jsonres["userid"].string else{
@@ -141,10 +144,21 @@ class  DataMessageCenter {
                     return  newdata.serialdata()
                     
                 }
+                else{
+                    
+                    return   Responseinfo.makeerrresponse(10011, "无此玩家").serialdata()
+                }
                 
                 
                 
             }
+            
+            
+            
+            
+            
+            
+            
         }   catch (let err){
             
             
