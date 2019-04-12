@@ -50,16 +50,18 @@ class ViewController: UIViewController ,GCDAsyncSocketDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+      
        
        
         // Do any additional setup after loading the view.
     }
     @IBAction public  func  startserver(_ sender:Any){
         
-      
+       
         if !isstart{
         servergoblequene = DispatchQueue.global()
-        serverscoket = GCDAsyncSocket.init(delegate: self, delegateQueue:servergoblequene )
+        serverscoket = GCDAsyncSocket.init(delegate: self, delegateQueue:DispatchQueue.main )
         
         do {
             try serverscoket.accept(onPort: port)
@@ -76,49 +78,81 @@ class ViewController: UIViewController ,GCDAsyncSocketDelegate{
         
         
     }
+    
+    
+    
+    
+    
     func socket(_ sock: GCDAsyncSocket, didReceive trust: SecTrust, completionHandler: @escaping (Bool) -> Void) {
         
     }
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
-        if   sock == self.serverscoket{
-            print("跟这个一样?")
+       
+        let serverdata = String.init(data: data, encoding: .utf8)
+       
+        if serverdata != nil && serverdata == "isline" {
+            print("保持心跳中.....")
+            sock.write(data, withTimeout: 3.0, tag: 1)
+            
+            heartCheck(sock)
         }
-        let account = String.init(data: data, encoding: .utf8)
-        let  strtitle = RandomServciceTip()
-        let  backmsg = "\(strtitle):\(String(describing: account!)),你好欢迎来到我的聊天室. \n"
-        let data = backmsg.data(using: .utf8)
-        print("发送消息\(backmsg)")
-        sock.write(data!, withTimeout: 3.0, tag: 1)
-        sock.readData(withTimeout: -1, tag: 1)
+        else{
+            
+            guard let  responsedata =   DataMessageCenter.dealWithMessage(data) else{
+                
+                heartCheck(sock)
+                return
+            }
         
+            sock.write(responsedata, withTimeout: 3.0, tag: 1)
+            
+           heartCheck(sock)
+            
+        }
+        
+        
+
+        
+       
+        
+    }
+    func heartCheck(_ client:GCDAsyncSocket)  {
+        client.readData(withTimeout: 6, tag: 1)
         
     }
     
     func socket(_ sock: GCDAsyncSocket, didAcceptNewSocket newSocket: GCDAsyncSocket) {
        
-            if self.accountsocktes.contains(sock){
+        if  sock == self.serverscoket{
+            
+            print("一样的")
+        }
+            if self.accountsocktes.contains(newSocket){
                  print("用户已有相关socket")
                 return
             }
             self.accountsocktes.append(newSocket)
             print("\(self.accountsocktes.count)个玩家进入服务器了")
         
-        
             newSocket.readData(withTimeout: -1, tag: 1)
-            
+//            newSocket.readData(withTimeout: -1, tag: 1)
+        
         
         
     }
     
     
     
-    
+    func socketDidCloseReadStream(_ sock: GCDAsyncSocket) {
+        print("socket read invalid")
+    }
     
     func socket(_ sock: GCDAsyncSocket, didConnectTo url: URL) {
         print("客户进来了")
     }
     func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
           print("我与客户连上了")
+        
         
     }
     func socketDidDisconnect(_ sock: GCDAsyncSocket, withError err: Error?) {
